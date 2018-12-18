@@ -7,18 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
-    <script src="main.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </head>
 <body>
  <div class=row>
      <!-- make text font about 64pt, some script -->
-     <h1 style=text-align:center>Trivia game</h1>
+     <h1 text-align=center>Trivia game</h1>
 
      <div class=col-md-2></div>
      <!-- question zone -->
     <div class=col-lg-8>
-        <div class=Questions> 
-            
+        <div id=Questions> 
+            <h2 id=sfQuestion>"Which of the following is not a Street Fighter character"</h2>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"  value="option1">
+                    <label class="form-check-label" for="exampleRadios1" id="sfAnswers"></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"  value="option2">
+                    <label class="form-check-label" for="exampleRadios1" id="sfAnswers"></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="option3">
+                    <label class="form-check-label" for="exampleRadios1" id="sfAnswers"></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="sfAnswers" value="option4">
+                    <label class="form-check-label" for="exampleRadios1" id="sfAnswers"></label>
+                </div>
+
+
+                <h2 id=rapQuestion>"Which rapper was recently awarded a Pulitzer?"</h2>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="option1">
+                    <label class="form-check-label" for="exampleRadios1" id=></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="sfAnswers" value="option2">
+                    <label class="form-check-label" for="exampleRadios1"></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="sfAnswers" value="option3">
+                    <label class="form-check-label" for="exampleRadios1"></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="sfAnswers" value="option4">
+                    <label class="form-check-label" for="exampleRadios1"></label>
+                </div>
+
         </div>
     </div>
      
