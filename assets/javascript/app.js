@@ -1,3 +1,24 @@
+// on each new "slide", the code needs to:
+
+// show the timer and start a countdown
+// make the start button disappear
+// show the question
+// make each button an answer (which will have some sort of hover state) and show then in order
+
+// Selecting an answer will:
+// Clear the page
+// Restart the time
+// Show the next question
+// Display the next set of answers
+
+// At game's end:
+// Show number of correct answers
+// show number of wrong answers
+// play again button
+// go back to start screen
+
+
+
 $(document).ready(); {
 
     var count = 0;
@@ -45,7 +66,7 @@ function hideQA() {
 //creates a new "slide"; empties page and shows new info
 function questionSlide() {
     // $("#timeHere").text(timer);
-    startButton.hide;
+    $("#sutaato").hide;
     $("#questionHere").text(questions[count]);
     $("#AnswerSlot1").text(firstChoice[count]);
     $("#AnswerSlot2").text(secondChoice[count]);
@@ -59,6 +80,11 @@ function gameStart() {
     questionSlide();
     console.log(questionSlide);
 }
-$("#sutaato").on("click", gameStart())
+if ($("#sutaato").on("click")) {
+ 
+gameStart();
+ questionSlide();
+ console.log(question[count]);
+}
 
 }
